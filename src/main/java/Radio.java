@@ -3,6 +3,13 @@ public class Radio {
     private int currentVolume;
     private int maxStation = 9;
 
+    public Radio() {
+    }
+
+    public Radio(int amountStations) {
+        this.maxStation = amountStations - 1;
+    }
+
     public int getCurrentRadioStation() {
         return currentRadioStation;
     }
@@ -25,13 +32,6 @@ public class Radio {
         } else {
             currentVolume = newCurrentVolume;
         }
-    }
-
-    public Radio(int amountStations) {
-        this.maxStation = amountStations - 1;
-    }
-
-    public Radio() {
     }
 
     public void nextRadioStation() {

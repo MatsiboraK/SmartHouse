@@ -80,7 +80,6 @@ public class RadioTest {
         Assertions.assertEquals(0, radio.getCurrentRadioStation());
     }
 
-
     @Test
     public void shouldNotSwitchPrevRadioStation() {
         radio.setCurrentRadioStation(0);
