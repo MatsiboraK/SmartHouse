@@ -14,20 +14,12 @@ public class Radio {
         this.maxStation = amountStations - 1;
     }
 
-    public int getCurrentRadioStation() {
-        return currentRadioStation;
-    }
-
     public void setCurrentRadioStation(int newCurrentRadioStation) {
         if (newCurrentRadioStation < 0 || newCurrentRadioStation > maxStation) {
             return;
         } else {
             currentRadioStation = newCurrentRadioStation;
         }
-    }
-
-    public int getCurrentVolume() {
-        return currentVolume;
     }
 
     public void setCurrentVolume(int newCurrentVolume) {
